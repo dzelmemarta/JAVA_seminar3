@@ -34,7 +34,23 @@ public class Post {
 	}
 	
 	// 4. non args
+	
+	public Post() {
+		setMsg("Hello!");
+	}
+	
 	// 5. args
+	
+	public Post(String msg) {
+		setMsg(msg);
+	}
+	
 	// 6. toString
+	
+	@Override
+	public String toString() {
+		return "message: " + msg + ", dateTime: " + dateTime + " countOfLikes: " + countOfLikes;
+	}
+	
 	// 7. others
 }
